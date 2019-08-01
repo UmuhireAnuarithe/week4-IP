@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color:orange;
+
+}
+.head{
+    background-image: url("../images/download.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+}
