@@ -4,11 +4,21 @@ h1{
 
 }
 .head{
-    background-image: url("../images/download.webp");
+    /* background-image: url("../images/download.webp"); */
+    background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
     font-size: 30px;
     color: white;
     padding: 20px;
+}
+.head>p{
+    float: left;
+}
+h1{
+    background-color: bisque;
+    font-size: 70px; 
+    font-style: italic;
+    font-family: 'Literata', serif;
 }
