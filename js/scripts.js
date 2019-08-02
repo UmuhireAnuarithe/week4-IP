@@ -7,12 +7,27 @@ function Pizza(size,crust,toppings,price){
 
 }
 
+Pizza.prototype.fullName = function() {
+    return this.names + " " + this.email + ""+ this.phoneNumber + " " + this.selectSize + "" + this.selectCrust + ""
+    this.selectTopping;
+}
+
+
 
 // user interface logic
-//  
-    // $("class.row").submit(function(event) {
-    //   event.preventDefault();
-  $(document).ready(function(){   
+    
+    $(document).ready(function() {
+        $(".row").submit(function(event) {
+          event.preventDefault();
+      var names=$("input#user").val();
+      var email=$("input#mail").val();
+      var phoneNumber=$("input#phone").val();
+      var selectSize=$("select#size").val();
+      var selectCrust=$("select#crust").val();
+      var selectTopping=$("select#topping").val();
+      var newOrder = new Pizza(names,email,phoneNumber,phoneNumber,selectSize,selectCrust,selectTopping);
+      $("ul#orders").append("<li><span class='contact'>" + newOrder.fullOders() + "</span></li>");
+
   $("# order").click(function() {
     $("#onother").append('<div class="row"> '+
         
@@ -74,6 +89,8 @@ function Pizza(size,crust,toppings,price){
                 '</div>')
         
         }); 
-    })         
+
+    });        
   
 
+    });

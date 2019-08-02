@@ -31,7 +31,7 @@
         <div class="row"  id="another">
             <div class="col-md-4">
                 <label  style="font-size: 30px">Select Crust:</label>
-                <select name="crust" class="form-group">
+                <select name="crust" class="form-group"  id="crust">
                      <option>Flatbread :3000rwf</option>
                     <option>New York :4000rwf</option>
                     <option>Sicilian :3200rwf</option>
@@ -48,7 +48,7 @@
 
             <div class="col-md-4">
                     <label  style="font-size: 30px">Select toppings:</label>
-                    <select name="toppings" class="form-group">
+                    <select name="toppings" class="form-group" id="topping">
                         <option>select toppings</option>
                         <option>Onions.</option>
                         <option> Mushrooms</option>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-md-4">
                     <label style="font-size: 30px">Select size:</label>
-                    <select name="size" class="form-group">
+                    <select name="size" class="form-group" id="size">
                         <option>Small price :6000 rwf</option>
                         <option>Medium price :9000 rwf</option>
                         <option>Large price :12 000 rwf</option>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-md-4">
                     <label  style="font-size: 30px">Comfirm delivery:</label>
-                    <select name="deliver" class="form-group">
+                    <select name="deliver" class="form-group" >
                             <option>Yes</option>
                             <option>No</option>
                     </select>
@@ -85,11 +85,21 @@
                 
             </div>
         </form>
+        <div id="show-oders">
+                <h2></h2>
+                <p> names: <span class="names"></span></p>
+                <p>Email: <span class="mail"></span></p>
+                <p>phone number:</p>
+                <ul id="orders">
+        
+                </ul>
+              </div>
             <!-- <h3>List of orders:</h3> -->
         </div>
         </div>
         
-
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/scripts.js"></script>
 
     </div>
     
