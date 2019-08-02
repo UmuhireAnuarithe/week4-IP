@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,8 @@
 </head>
 <body>
     <div class="container">
-      <div class="row">
+        <form >
+      <div class="row" >
            <div class="col-md-12">
                 <h1>Welcome make your order here</h1>
             </div>  
@@ -26,29 +28,28 @@
                 <label>Phone number</label><br>
                 <input type="number" name="" id="phone">
             </div>
-        <div class="row">
+        <div class="row"  id="another">
             <div class="col-md-4">
-                <label>Select Crust:</label>
+                <label  style="font-size: 30px">Select Crust:</label>
                 <select name="crust" class="form-group">
-                    <!-- <option>select topings</option> -->
-                    <option>Flatbread</option>
-                    <option>New York</option>
-                    <option>Sicilian</option>
-                    <option> Romana</option>
-                    <option> Cast Irons</option>
-                    <option>Cracker Crust</option>
-                    <option>St. Louis</option>
-                    <option>>Multigrain</option>
-                    <!-- <option></option> -->
-                </select>
+                     <option>Flatbread :3000rwf</option>
+                    <option>New York :4000rwf</option>
+                    <option>Sicilian :3200rwf</option>
+                    <option> Romana :3000rwf</option>
+                    <option> Cast Irons :3500rwf</option>
+                    <option>Cracker Crust :3500rwf</option>
+                    <option>St. Louis :3000rwf</option>
+                    <option>>Multigrain :3400rwf</option>
+                     <option></option>
+                 </select>
                 
             </div>
 
 
             <div class="col-md-4">
-                    <label>Select toppings:</label>
+                    <label  style="font-size: 30px">Select toppings:</label>
                     <select name="toppings" class="form-group">
-                        <option>select topings</option>
+                        <option>select toppings</option>
                         <option>Onions.</option>
                         <option> Mushrooms</option>
                         <option> Extra cheese</option>
@@ -60,15 +61,32 @@
                     
                 </div>
                 <div class="col-md-4">
-                    <label>Select size:</label><br>
+                    <label style="font-size: 30px">Select size:</label>
                     <select name="size" class="form-group">
-                        <option>Small</option>
-                        <option>Medium</option>
-                        <option>Large</option>
+                        <option>Small price :6000 rwf</option>
+                        <option>Medium price :9000 rwf</option>
+                        <option>Large price :12 000 rwf</option>
                     </select>
                 </div>
+                <div class="col-md-4">
+                    <label  style="font-size: 30px">Comfirm delivery:</label>
+                    <select name="deliver" class="form-group">
+                            <option>Yes</option>
+                            <option>No</option>
+                    </select>
+                </div>
+                <div class="order">
+                    <label  style="font-size: 30px">Enter quantity:</label>
+                    <input type="number" name="" id="nbr"><br><br>
+                    <input type="button" name="" value="ORDER">
+                    <!-- <input type="button" id="addoder" value="another order"> -->
+                    <span class="btn btn-primary" id="order">Another order</span><br>
+                </div>
+                
+            </div>
+        </form>
+            <!-- <h3>List of orders:</h3> -->
         </div>
-    </div>
         </div>
         
 
@@ -76,4 +94,4 @@
     </div>
     
 </body>
-</html>
+</html> 

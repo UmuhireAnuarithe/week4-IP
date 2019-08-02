@@ -1,7 +1,7 @@
-h1{
-    text-align: center;
-    color:orange;
-
+#another{background-color: antiquewhite;
+    width: cover;
+    
+    
 }
 .head{
     /* background-image: url("../images/download.webp"); */
@@ -9,16 +9,18 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    font-size: 30px;
+    font-size: 80px;
     color: white;
-    padding: 20px;
+    padding: 40px;
 }
-.head>p{
-    float: left;
+.head>h2{
 }
 h1{
     background-color: bisque;
     font-size: 70px; 
     font-style: italic;
     font-family: 'Literata', serif;
+    text-align: center;
+    color:orange;
+
 }
