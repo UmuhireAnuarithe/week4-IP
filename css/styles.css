@@ -4,16 +4,11 @@
     
 }
 .head{
-    /* background-image: url("../images/download.webp"); */
     background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    font-size: 80px;
-    color: white;
-    padding: 40px;
-}
-.head>h2{
+    justify-content: space-around;
 }
 h1{
     background-color: bisque;
@@ -23,4 +18,7 @@ h1{
     text-align: center;
     color:orange;
 
+}
+#link{
+justify-content: space-evenly;
 }

@@ -15,6 +15,11 @@ Pizza.prototype.fullName = function() {
 
 
 // user interface logic
+$(document).ready(function(){
+    $("#ss,#s1").click(function(){
+     $(".small").toggle();
+     $("#s1").toggle();
+    });
     
     $(document).ready(function() {
         $(".row").submit(function(event) {
