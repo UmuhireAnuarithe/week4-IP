@@ -4,7 +4,7 @@ week4-IP
 Umuhire Anuarithe
 
 ## Project description
-week4-IP is project is online pizza shopping where clients come on our website and make an order of pizza with crust and toppings he/she wants with a specific size,either small,large or madium` .
+week4-IP is project is online pizza shopping where clients come on our website and make an order of pizza with crust and toppings he/she wants with a specific size,either small,large or madium. Also you should comfirm if you want delivery or not . 
 ### setup installation
 none
 ### behavior driven development
