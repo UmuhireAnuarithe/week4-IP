@@ -1,4 +1,4 @@
-##project name
+## project name
 week4-IP
 ## Author's name
 Umuhire Anuarithe
