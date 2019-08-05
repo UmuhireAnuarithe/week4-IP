@@ -1,10 +1,11 @@
 // business logic
 var purchase=[];
-function Pizza(size,crust,toppings,sizePrice,crustPrice,toppingsPrice,pizzaNumber){
+ function Pizza(size,crust,toppings,pizzaNumber,price){
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.price = 0;
+    this.price = price;
+    this.pizzaNumber=pizzaNumber;
     // this.sizePrice = sizePrice;
     // this.crustPrice = crustPrice;
     // this.toppingsPrice = toppingsPrice;
@@ -44,7 +45,7 @@ Pizza.prototype.pizzaCost = function(){
         this.price +=1700;
     }
     else if (this.crust === " Cast-Irons"){
-        this.price +== 1200;
+        this.price +=1200;
     }
     else if(this.crust === "Flatbread") {
         price = 1800; 
@@ -84,20 +85,21 @@ pizza.prototype.totalAmount = function(){
 //     });
     
     $(document).ready(function() {
-        $("#send").click(function(event) {
-          event.preventDefault();
+        $("form#form").click(function(event) {
+          event.preventDefault()});
     //   var names=$("input#user").val();
     //   var email=$("input#mail").val();
     //   var phoneNumber=$("input#phone").val();
+    $("send").click(function(){
       var pizzaSize=$("select#size").val();
       var pizzaCrust=$("select#crust").val();
       var pizzzaTopping=$("select#topping").val();
       var pizzaNumber=$("input#nbr").val();
 
-      var description = pizzaSize + "" + pizzaCrust + "" + pizzzaTopping + "" + pizzaNumber;
-      var newOrder = new Pizza(pizzzaSize,pizzaCrust,pizzaTopping);
+     var description = pizzaSize + "" + pizzaCrust + "" + pizzzaTopping + "" + pizzaNumber;
+     var newOrder = new Pizza(pizzzaSize,pizzaCrust,pizzaTopping);
       newOrder.pizzaCost();
-      purchase.push(newOrder.price);
+     purchase.push(newOrder.price);
       $("#summary").show();
       $("#paid").text(newOrder.totalAmount);
       $("ul#pizzaOrdered").append("<ul><li>" + description + "</span></ul><li>");

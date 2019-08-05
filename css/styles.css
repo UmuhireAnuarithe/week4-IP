@@ -9,6 +9,7 @@
     background-size: cover;
     height: 600px;
     justify-content: space-around;
+
 }
 h1{
     background-color: bisque;
@@ -21,4 +22,14 @@ h1{
 }
 #link{
 justify-content: space-evenly;
+}
+footer{
+    text-align: center;
+    background-color: bisque;
+    color: orange;
+}
+#here{
+    background-color: bisque;
+    position:absolute;
+
 }
