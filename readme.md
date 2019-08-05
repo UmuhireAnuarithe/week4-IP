@@ -17,7 +17,7 @@ none
 ### technologies used
 * HTML
 * CSS
-*  JVASCRIPT
+*  JAVASCRIPT
 * JSQUERY
 
 ### license and copyright
