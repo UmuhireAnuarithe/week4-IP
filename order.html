@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/oder.css">
+    <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/scripts.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -33,15 +36,14 @@
             <div class="col-md-4">
                 <label  style="font-size: 30px">Select Crust:</label>
                 <select name="crust" class="form-group"  id="crust">
-                     <option>Flatbread </option>
-                    <option>New York </option>
-                    <option>Sicilian</option>
-                    <option> Romana </option>
-                    <option> Cast Irons</option>
-                    <option>Cracker Crust</option>
-                    <option>St. Louis</option>
-                    <option>>Multigrain</option>
-                     <option></option>
+                     <option value="flatbred">Flatbread </option>
+                    <option  value="stufed"> stufed  </option>
+                    <option value="glutenfree">glutenfree</option>
+                    <option value="cast-irons"> Cast Irons</option>
+                    <option value="Cracker-Crust">Cracker Crust</option>
+                    <option value="St-Louis">St. Louis</option>
+                    <option value="Multigrain">Multigrain</option>
+                    <option value="New-York">New-York</option>
                  </select>
                 
             </div>
@@ -50,24 +52,22 @@
             <div class="col-md-4">
                     <label  style="font-size: 30px">Select toppings:</label>
                     <select name="toppings" class="form-group" id="topping">
-                        <option>select toppings</option>
-                        <option>Onions.</option>
-                        <option> Mushrooms</option>
-                        <option> Extra cheese</option>
-                        <option> Green peppers.</option>
-                        <option> Black olives</option>
-                        <option> Bacon</option>
-                        <option>Pepperoni.</option>
+                        <option value="1"> bacon,pepperoni,onions</option>
+                        <option value="2">bacon , black olives, Green peppers</option>
+                        <option value="3"> mushrooms ,tomatoes,onions"</option>
+                        <option value="4"> pepperoni,extra cheeese</option>
+                        <option value="5">pepperoni,tomatoes,onions</option>
                     </select>
                     
                 </div>
                 <div class="col-md-4">
                     <label style="font-size: 30px">Select size:</label>
                     <select name="size" class="form-group" id="size">
-                        <option>Small </option>
-                        <option>Medium</option>
-                        <option>Large </option>
+                        <option value="small">Small </option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large </option>
                     </select>
+                </div>
                 </div>
                 <div class="col-md-4">
                     <label  style="font-size: 30px">Comfirm delivery:</label>
@@ -79,9 +79,17 @@
                 <div class="order">
                     <label  style="font-size: 30px">Enter quantity:</label>
                     <input type="number" name="" id="nbr"><br><br>
-                    <input type="button" name="" value="ORDER">
+                    <input type="submit" name="button" value="ORDER" id="send">
                     <!-- <input type="button" id="addoder" value="another order"> -->
                     <span class="btn btn-primary" id="order">Another order</span><br>
+                </div>
+                <div class="details">
+                    <h2 id="summary">ORDER SUMMRY:</h2>
+                    <ul id="pizzaOrdered">
+                        
+                       
+                    </ul>
+                    <p>TOTOL AMOUNT:<span id="paid" ></span></p>
                 </div>
                 
             </div>
@@ -90,8 +98,8 @@
         
         
     </div>
-    <script src="js/jquery-3.4.1.js"></script>
-        <script src="js/scripts.js"></script>
+    <!-- <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/scripts.js"></script> -->
 
 </body>
 </html> 
